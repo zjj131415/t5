@@ -1,0 +1,21 @@
+{
+  "name": "t5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp --gulpfile=tools/gulpfile.js --color --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "optimist": "^0.6.1",
+    "path": "^0.12.7"
+  }
+}

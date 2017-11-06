@@ -1,0 +1,140 @@
+html, body {
+  position: relative;
+  min-width: 320px;
+  max-width: 750px;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.video_exist {
+  width: 1.6rem;
+  height: 1.6rem;
+  position: absolute;
+  right: .4rem;
+  top: .4rem;
+  z-index: 99;
+  background: url(../images/normalmusic.png) no-repeat;
+  background-size: 1.6rem 1.6rem;
+  .rotate {
+    animation: rotating 2s linear infinite;
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: none;
+  .logo {
+    width: 4.8rem;
+    position: absolute;
+    left: .64rem;
+    top: .64rem
+  }
+}
+
+
+.page1 {
+  background: url(../images/bg.jpg) no-repeat top;
+  background-size: 100% 100%;
+  .car {
+    width: 13.04rem;
+    position: absolute;
+    left: 50%;
+    top: 12.8rem;
+    margin-left: -6.52rem;
+  }
+}
+
+.page2 {
+  background: url(../images/upload-bg.jpg) #000 center no-repeat;
+  background-size: 100% auto;
+}
+//form
+.page4 {
+  background: url(../images/bg2.jpg) no-repeat top;
+  background-size: cover;
+  padding-top: 3.8rem;
+  .car {
+    position: absolute;
+    bottom: -1rem;
+    width: 10.12rem;
+    left: 50%;
+    margin-left: -5.06rem;
+  }
+  .form {
+    margin: 0 auto 0 auto;
+    width: 11.28rem;
+    height: 11rem;
+    background: url(../images/form.png);
+    background-size: cover;
+    .form-box {
+      position: relative;
+      z-index: 30;
+      width: 8.4rem;
+      height: 6rem;
+      margin: 0 auto;
+      padding-top: 3.4rem;
+    }
+    .form-item {
+      height: 1.2rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      .tit {
+        font-weight: bold;
+        font-size: .52rem;
+        color: #fff;
+        letter-spacing: 2px;
+      }
+      .input {
+        flex: 1;
+        overflow: hidden;
+      }
+      .txt {
+        width: 100%;
+        outline: none;
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        font-size: .52rem;
+        color: #fff;
+        background: transparent;
+        border-bottom: 1px solid #fff;
+        border-radius: 0;
+      }
+      select {
+        padding-right: 30px;
+        background-image: url(../images/arrow.png) !important;
+        background-size: 19px 10px !important;
+        background-position: center right !important;
+        background-repeat: no-repeat !important;
+      }
+    }
+    .form-btn {
+      position: absolute;
+      left: 50%;
+      bottom: 2rem;
+      margin-left: -3.46rem;
+      width: 6.92rem;
+      height: 1.72rem;
+      outline: none;
+      border: none;
+      background: url(../images/btn10.png) no-repeat center transparent;
+      background-size: cover;
+    }
+  }
+}
