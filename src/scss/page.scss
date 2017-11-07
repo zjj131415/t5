@@ -61,6 +61,107 @@ html, body {
 .page2 {
   background: url(../images/upload-bg.jpg) #000 center no-repeat;
   background-size: 100% auto;
+  .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    .upload {
+      position: relative;
+      margin: 0 auto;
+      margin-top: 3.2rem;
+      width: 10rem;
+      height: 7rem;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .uploadBg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .uploadShow{
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+      }
+      input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        opacity: 0;
+      }
+    }
+    .gender {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.4rem;
+      .g1,
+      .g2 {
+        width: 1.52rem;
+        height: 1.52rem;
+        margin: 0 .48rem;
+        &.active {
+          background-color: #000;
+        }
+      }
+    }
+    .selects {
+      margin-top: 4rem;
+      .select {
+        width: 14rem;
+        height: 1.6rem;
+        margin: 0 auto;
+        margin-top: .8rem;
+        background: rgba(94, 94, 94, .6);
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        select {
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border: 0;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border-radius: 0;
+          font-size: .6rem;
+          color: rgba(255, 255, 255, .5);
+          padding-right: 1.2rem;
+          background: url(../images/arrow.png) no-repeat center right  transparent;
+          background-size: 26px 12px;
+        }
+      }
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      left: 0;
+      bottom: 1.28rem;
+      width: 100%;
+      .btn {
+        width: 6.8rem;
+        outline: none;
+        border: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        color: #fff;
+        background: transparent;
+      }
+    }
+  }
 }
 //form
 .page4 {

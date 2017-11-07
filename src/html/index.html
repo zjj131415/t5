@@ -11,12 +11,17 @@
     <title>比速T5 速写未来</title>
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/jquery.cxselect.js"></script>
+    <script src="../js/exif.js"></script>
+    <script src="../js/move.js"></script>
+    <script src="../js/imgClip.js"></script>
+    <script src="../js/layer.js"></script>
     <script src="../js/router.js"></script>
     <script src="../js/index.js"></script>
 </head>
 <body>
 <div id="audio_btn" class="video_exist">
-    <!--<audio loop="" autoplay="" src="../images/music.mp3" id="media" preload=""></audio>-->
+    <audio loop="" autoplay="" src="../images/music.mp3" id="media" preload=""></audio>
 </div>
 <div class="page page1">
     <div class="logo">
@@ -31,8 +36,45 @@
 </div>
 <!--page upload-->
 <div class="page page2">
-    <div>reset</div>
-    <div><a href="#/generate">生成</a></div>
+    <img src="" id="img" alt="">
+    <div class="cover">
+        <form class="upload-form">
+            <div class="upload">
+                <img src="../images/upload.png" alt="" class="uploadBg">
+                <img src="" class="uploadShow">
+                <input type="file" accept="image/*" id="uploadImagee">
+            </div>
+            <div class="upload-text">为比速T5助威，还有两步</div>
+            <div class="selects">
+                <div class="select">
+                    <select class="v1" name="Type" id="Type">
+                        <option value="1">请选择助威方式 </option>
+                        <option value="1">我为比速T5自动挡助威 </option>
+                        <option value="2">我为比速T5自动挡代言 </option>
+                        <option value="3">我为比速T5自动挡呐喊 </option>
+                    </select>
+                </div>
+                <div class="select">
+                    <select class="v2" name="Content" id="Content">
+                        <option value="1">请选择助威宣言</option>
+                        <option value="1">领先动力 我来体验</option>
+                        <option value="2">领先品质 我来体验</option>
+                        <option value="3">领先装备 我来体验</option>
+                        <option value="4">领先安全 我来体验</option>
+                        <option value="5">领先颜值 我来体验</option>
+                    </select>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="btn btn1">
+                    <img src="~/Scripts/mp/bisu/images/btn4.png" alt="">
+                </div>
+                <div class="btn btn2" id="produce">
+                    <img src="~/Scripts/mp/bisu/images/btn22.png" alt="">
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 <!--page rule-->
 <div class="page page3">
